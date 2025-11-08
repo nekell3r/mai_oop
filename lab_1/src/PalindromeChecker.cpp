@@ -5,10 +5,13 @@
 namespace lab01 {
 
 bool PalindromeChecker::IsPalindrome(const std::string& input) {
-  std::string tmp = input;
-  std::reverse(tmp.begin(), tmp.end());
+  if (input.empty()) {
+    return true;
+  }
+  std::string reversed = input;
+  std::reverse(reversed.begin(), reversed.end());
 
-  if (input != tmp) {
+  if (input != reversed) {
     return false;
   }
 

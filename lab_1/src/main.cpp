@@ -9,7 +9,7 @@ int main() {
     return 0;
   }
 
-  const bool is_pal = lab01::PalindromeChecker::IsPalindrome(input);
+  bool is_pal = lab01::PalindromeChecker::IsPalindrome(input);
 
   if (is_pal) {
     std::cout << "YES\n";
